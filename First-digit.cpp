@@ -14,14 +14,13 @@ cin.tie(nullptr);
 
 int x;
 cin >> x;
-int firstDigit = 1000/x;
-if (firstDigit % x == 2 )
+int firstDigit = x/1000;
+if (firstDigit % 2 == 0 )
 {
   cout << "EVEN" ;
 }else{
      cout << "ODD" ; 
 }
-
 
     return 0;
 }
